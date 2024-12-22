@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+        }  
+        .container{
+            display: grid;
+            gap: 2px;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows:15vh 15vh 28vh 28vh 15vh 10vh;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "section1 section2 section3"
+                                 "section1 article1 article2"
+                                 
+                                 "footer footer footer";
+        }
+        .header{
+            background-color: blanchedalmond;
+            background-size: cover;
+            grid-area: header;
+            text-align: center;
+        }
+        .nav{
+            background-color:aqua;
+            grid-area: nav;
+            text-align: center;
+        }
+        .article1{
+            background-color:yellow;
+            grid-area: article1;
+            text-align: center;
+        }
+        .article2{
+            background-color:yellow;
+            grid-area: article2;
+            text-align: center;
+        }
+        .container .section1{
+            background-color: red;
+            grid-area: section1;
+            text-align: center;
+        }
+        .section2{
+            background-color: blue;
+            grid-area: section2;
+            text-align: center;
+        }
+        .section3{
+            background-color: green;
+            grid-area: section3;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: gray;
+            grid-area: footer;
+            text-align: center;
+        }
+        .container{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav bar</div>
+        <div class="section1">section1</div>
+        <div class="section2">article1</div>
+        <div class="section3">article2</div>
+        <div class="article1">article1</div>
+        <div class="article2">article2</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
